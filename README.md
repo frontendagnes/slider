@@ -30,7 +30,7 @@ z pliku html skopiować do sojej strony kontenr o klasie .slider, zmienić zawra
 Żeby zmienińć rozmiar Slidera należy w pliku .css na samej górze w elemencie :root zmienić wartości.
 
 ## Contribute
-Source Code:
+Source Code: https://github.com/zabula81/slider.git
 
 # License
 
