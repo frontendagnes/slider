@@ -28,7 +28,6 @@
     justify-content: center;
     text-align: center;
     flex-flow: column nowrap;
-    transition: 2s left;
     text-shadow: 4px 4px 6px #000000;
 }
 .title-slide{
