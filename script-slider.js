@@ -46,8 +46,7 @@ let btnNext = document.querySelector(".btn-next")
 
 //#region obsługa buttona prevSlide
 
-function prevSlide(e) {
-    e.preventDefault()
+function prevSlide() {
     let prevSib, prevBtn
     for (let s of slide) {
         if (s.classList.contains("active-slide")) {
@@ -78,8 +77,7 @@ btnPrev.addEventListener("click", prevSlide)
 //#endregion
 
 //#region obsługa buttona nextSlide
-function nextSlide(e) {
-    e.preventDefault()
+function nextSlide() {
     let nextSib, nextBtn
     for (let s of slide) {
         if (s.classList.contains("active-slide")) {
