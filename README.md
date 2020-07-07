@@ -32,7 +32,7 @@ do prawidłówego działania przejść oraz prawidłowego wyswietlania czcionek,
 z pliku html skopiować do swojej strony kontenr o klasie .slider, zmienić zawratość elementów article wg własnych potrzeb.
 Żeby zmienińć rozmiar Slidera należy w pliku style-slider.css na samej górze w elemencie :root zmienić wartości.
 
-Do prawidłowego działania należe każdemu nowo dodanemu artykułowi należ nadać id = "article + kolejny numer"
+Do prawidłowego działania należy każdemu nowo dodanemu artykułowi nadać id = "article + kolejny numer"
 
 ## Contribute
 * Source Code: https://github.com/zabula81/slider.git
