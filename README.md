@@ -12,6 +12,8 @@ Do projektu zostały dołączone biblioteki:
 
 Wykorzystano również czcionki google (google Fonts)
 
+Obrazy pobrane ze strony: https://pixabay.com/pl/
+
 Projekt można zautomatyzować w pliku script-slider.js na samym dole strony znajduje się linia
 
 // setInterval(nextSlide, 10000) 
