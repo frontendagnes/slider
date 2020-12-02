@@ -6,7 +6,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
 }
 .slider{
     position: relative;
@@ -33,7 +34,8 @@
 .title-slide{
     letter-spacing: 5px;
     width: 100%;
-    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     font-family: 'Fondamento'
 }
 .cnt-slide{
@@ -42,7 +44,8 @@
     font-size: 18px;
     align-self: center;
     letter-spacing: 3px;
-    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
 }
 .slide{
     height: 50vh;
@@ -103,6 +106,7 @@
 }
 .dots{
     list-style-type: none;
+    -webkit-padding-start: 0;
     padding-inline-start: 0;
 }
 .dot{
@@ -112,7 +116,6 @@
     height: 20px;
     border-radius: 50%;
     cursor: pointer;
-    display: inline-block;
     border: 2px solid #ffffff;
     opacity: .6;
 }

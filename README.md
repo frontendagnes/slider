@@ -1,5 +1,4 @@
-# Project title
-Slider (karuzela)
+# Slider 2.0 (karuzela)
 ## Documentation
 Projekt został wykonany przy wykorzystaniu nstepujących technoligii:
 * html5

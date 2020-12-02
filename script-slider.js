@@ -1,6 +1,6 @@
 const slide = document.querySelectorAll(".slide")
 const buttons = document.querySelector(".slider-dots")
-let nr = 0; //zmienna która dodaj numer do kolenjengo slidu
+let nr = 0; //zmienna która dodaje numer do kolenjengo sliadu
 // tworzy kontener na kropki
 const dots = document.createElement("ul")
 dots.classList.add("dots")
