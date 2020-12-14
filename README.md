@@ -27,7 +27,7 @@ To use the slider, you need to connect css and js files to the page:
 ```html
 css: <link rel="stylesheet" href="./style/style.css">
 
-js:  <script type = "module" src="script-slider.js" defer></script>
+js:  <script type = "module" src="slider.js" defer></script>
 ```
 for the correct operation of transitions and the correct display of fonts, the following entries should be added in the head section of the index.html document:
 ```html
