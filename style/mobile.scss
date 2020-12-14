@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1111px) {
+    .slider{
+        &__title{
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+
+.slider{
+    &__title{
+        font-size: 24px !important;
+    }
+    &__descryption{
+        font-size: 14px;
+    }
+}
+
+}
+@media only screen and (max-width: 634px){
+    .slider{
+        width: 100% !important;
+      
+    }
+}
+@media only screen and (max-width: 390px){
+    .slider{
+        &__title{
+            font-size: 18px !important;
+        }
+        &__descryption{
+            height: 100px;
+            overflow: auto;
+        }
+    }
+}

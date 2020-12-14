@@ -1,5 +1,177 @@
 @charset "utf-8";
-$siema: #ffffff; 
-.slider{
-    color: $siema;
+@import url('./mobile.min.css');
+.slider,
+.slider__wrapper,
+.slider__slides,
+.slider__slide
+.btn,
+.dots,
+.dots__js-dots,
+.dots__js-dot
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// prędkośc animacji
+@mixin animationDur {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+// kolory kropek w dole slidu
+@mixin jsDot {
+    background-color: rgb(250, 102, 102);
+    border: 2px solid #ffffff;
+    opacity: 0.9;
+}
+
+// Zmienne
+$mainWidth: 60%; // szerokość slidera
+$mainHeight: 50vh; // wysokość slidera
+$titleColor: #ffffff; // kolor tytułu slidera
+$descryptionColor: #ffffff; // kolor treści slidera
+// wyłączenie kropek
+// .dots{
+//     display: none
+// }
+
+// wyłączenie strzałek
+// .btn{
+//     display: none;
+// }
+.slider {
+    position: relative;
+    width: $mainWidth;
+    height: $mainHeight;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    &__wrapper {
+        width: 100%;
+    }
+
+    &__slides {
+        position: relative;
+    }
+
+    &__slide {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+
+    &__content {
+        position: absolute;
+        height: $mainHeight;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        padding-right: 110px;
+        padding-left: 110px;
+        font-size: 22px;
+        font-family: 'Fondamento', cursive;
+        text-shadow: 4px 4px 2px #000000;
+    }
+
+    &__title {
+        color: $titleColor;
+        font-size: 36px;
+        letter-spacing: 5px;
+        @include animationDur();
+    }
+
+    &__descryption {
+        color: $descryptionColor;
+        @include animationDur();
+        text-align: center;
+        margin-top: -150px;
+    }
+
+    &__img {
+        width: 100%;
+        height: $mainHeight;
+    }
+}
+
+.btn {
+    //stylizacja strzałek bocznych
+    border: transparent;
+    background-color: #000000;
+    width: 70px;
+    opacity: 0.4;
+    color: #ffffff;
+    font-size: 28px;
+    transition: all 0.75s;
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &__prev {
+        margin-right: -70px; // margines cofamy o szerokość .btn żeby znajdował się na tłe
+    }
+
+    &__next {
+        margin-left: -70px; // margines cofamy o szerokość .btn żeby znajdował się na tłe
+    }
+}
+
+.active-slide { // klasa przełączana w js
+    // wyświtlenie aktywnego slajdu
+    display: flex;
+    position: absolute;
+    width: 100%;
+}
+
+.active-dot { // klasa przełączana w js
+    // stylizacja aktywnej kropki
+    @include jsDot();
+}
+
+// stylizacja kropek tworzonych w javascript
+.dots {
+    // kontener na krpoki
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+
+    &__js-dots {
+        // lista element <ul> potomek div.dots
+        list-style-type: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__js-dot {
+        // lista element <li> potomek <ul>
+        display: inline-block;
+        transition: all 0.9s;
+        margin-left: 5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid #ffffff;
+        opacity: 0.6;
+
+        &:hover {
+            @include jsDot();
+        }
+    }
+
+    &__js-href-dot {
+        //element <a> potomek <li>
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
+
 }

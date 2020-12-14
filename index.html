@@ -4,67 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style-all.css" class="css">
-    <title>Slider - Karuzela</title>
+    <title>Slider - Carousel</title>
 </head>
+
 <body>
     <h1>Slider - Karuzela</h1>
     <div class="slider">
-        <div class="slider-cnt">
-            <div class="slider-slide">
-                <article id="article1" class="slide active-slide">
-                    <img src="./img/wiosna.jpg" alt="" class="img-atr animate__fadeIn ">
-                    <div class="wap-cnt-slide">
-                        <h3 class="title-slide animate__fadeInTopLeft">Slide 1</h3>
-                        <p class="cnt-slide animate__fadeInBottomRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, culpa
+        <button type="button" class="btn btn__prev"> <i class="far fa-hand-point-left"></i> </button>
+        <div class="slider__wrapper">
+            <div class="slider__slides">
+                <article id="#article1" class="slider__slide js-slide active-slide">
+                    <img src="./img/wiosna.jpg" alt="" class="slider__img animate__fadeIn ">
+                    <div class="slider__content">
+                        <h3 class="slider__title animate__fadeInTopLeft">Slide 1</h3>
+                        <p class="slider__descryption animate__fadeInBottomRight">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Optio, culpa
                             soluta repudiandae quis animi nam explicabo? Reprehenderit illo expedita, tempore nisi sit
                             minus pariatur nostrum, natus vel sapiente vitae hic.</p>
                     </div>
                 </article>
-
-
-                <!-- <article id="article2" class="slide ">
-                    <img src="./img/lato.jpg" alt="" class="img-atr animate__fadeIn">
-                    <div class="wap-cnt-slide">
-                        <h3 class="title-slide animate__fadeInTopLeft">Slide 2</h3>
-                        <p class="cnt-slide animate__fadeInBottomRight">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus,
-                            assumenda! Saepe dolorem aperiam debitis omnis numquam harum impedit consequuntur repellat
-                            vitae rerum ducimus, eos nisi autem! Sint maxime a laboriosam?</p>
+                <article id="#article2" class="slider__slide js-slide">
+                    <img src="./img/lato.jpg" alt="" class="slider__img animate__fadeIn ">
+                    <div class="slider__content">
+                        <h3 class="slider__title animate__fadeInTopLeft">Slide 2</h3>
+                        <p class="slider__descryption animate__fadeInBottomRight">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Optio, culpa
+                            soluta repudiandae quis animi nam explicabo? Reprehenderit illo expedita, tempore nisi sit
+                            minus pariatur nostrum, natus vel sapiente vitae hic.</p>
                     </div>
                 </article>
-                <article id="article3" class="slide ">
-                    <img src="./img/jesien.jpg" alt="" class="img-atr animate__fadeIn">
-                    <div class="wap-cnt-slide">
-                        <h3 class="title-slide animate__fadeInTopLeft">Slide 3</h3>
-                        <p class="cnt-slide animate__fadeInBottomRight">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro magni
-                            labore deleniti, itaque possimus aut eveniet aliquam nemo vel? Rem modi vel recusandae
-                            inventore pariatur? Fugit et distinctio veniam perferendis.</p>
+                <article id="#article3" class="slider__slide js-slide">
+                    <img src="./img/jesien.jpg" alt="" class="slider__img animate__fadeIn ">
+                    <div class="slider__content">
+                        <h3 class="slider__title animate__fadeInTopLeft">Slide 3</h3>
+                        <p class="slider__descryption animate__fadeInBottomRight">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Optio, culpa
+                            soluta repudiandae quis animi nam explicabo? Reprehenderit illo expedita, tempore nisi sit
+                            minus pariatur nostrum, natus vel sapiente vitae hic.</p>
                     </div>
                 </article>
-                <article id="article4" class="slide ">
-                    <img src="./img/zima.jpg" alt="" class="img-atr animate__fadeIn">
-                    <div class="wap-cnt-slide">
-                        <h3 class="title-slide animate__fadeInTopLeft">Slide 4</h3>
-                        <p class="cnt-slide animate__fadeInBottomRight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut incidunt error
-                            eveniet qui, repellendus ullam impedit molestiae minus alias corporis sequi fugit nemo
-                            provident veritatis vero voluptates officiis repellat necessitatibus!</p>
+                <article id="#article4" class="slider__slide js-slide">
+                    <img src="./img/zima.jpg" alt="" class="slider__img animate__fadeIn ">
+                    <div class="slider__content">
+                        <h3 class="slider__title animate__fadeInTopLeft">Slide 4</h3>
+                        <p class="slider__descryption animate__fadeInBottomRight">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Optio, culpa
+                            soluta repudiandae quis animi nam explicabo? Reprehenderit illo expedita, tempore nisi sit
+                            minus pariatur nostrum, natus vel sapiente vitae hic.</p>
                     </div>
-                </article> -->
+                </article>
+                <article id="#article5" class="slider__slide js-slide">
+                    <img src="./img/jesien.jpg" alt="" class="slider__img animate__fadeIn ">
+                    <div class="slider__content">
+                        <h3 class="slider__title animate__fadeInTopLeft">Slide 5</h3>
+                        <p class="slider__descryption animate__fadeInBottomRight">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Optio, culpa
+                            soluta repudiandae quis animi nam explicabo? Reprehenderit illo expedita, tempore nisi sit
+                            minus pariatur nostrum, natus vel sapiente vitae hic.</p>
+                    </div>
+                </article>
             </div>
-            <div class="slider-dots">
-
-            </div>
+            <div class="dots js-dots"></div>
         </div>
-        <button type="button" class="btn btn-prev"> <i class="far fa-hand-point-left"></i> </button>
-        <button type="button" class="btn btn-next"> <i class="far fa-hand-point-right"></i> </button>
+        <button type="button" class="btn btn__next"> <i class="far fa-hand-point-right"></i> </button>
     </div>
 
-    <script type = "module" src="script-slider.js" defer></script>
+    <script type="module" src="slider.js" defer></script>
 </body>
 
 </html>
