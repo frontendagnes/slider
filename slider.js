@@ -114,4 +114,4 @@ btnNext.addEventListener("click", nextSlide) // dodaje nasłuch na zdarzenie kli
 //#endregion
 
 //automatyzacja slidera przełącza się co 4s - wykorzystuje funckję nextSlide
-setInterval(nextSlide, 4000); 
+// setInterval(nextSlide, 4000); 
