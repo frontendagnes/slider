@@ -76,6 +76,7 @@ $descryptionColor: #ffffff; // kolor treści slidera
         font-size: 22px;
         font-family: 'Fondamento', cursive;
         text-shadow: 4px 4px 2px #000000;
+        overflow: hidden;
     }
 
     &__title {
@@ -95,6 +96,9 @@ $descryptionColor: #ffffff; // kolor treści slidera
     &__img {
         width: 100%;
         height: $mainHeight;
+        &:first-child{
+            width: 100%;
+        }
     }
 }
 
