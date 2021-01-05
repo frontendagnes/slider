@@ -96,9 +96,6 @@ $descryptionColor: #ffffff; // kolor treści slidera
     &__img {
         width: 100%;
         height: $mainHeight;
-        &:first-child{
-            width: 100%;
-        }
     }
 }
 

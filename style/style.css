@@ -72,10 +72,6 @@
   height: 50vh;
 }
 
-.slider__img:first-child {
-  width: 100%;
-}
-
 .btn {
   border: transparent;
   background-color: #000000;
