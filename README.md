@@ -48,9 +48,9 @@ We can do the same for each article.
 To keep the photo only, remove the entire `<div class =" slider__content "> </div>` from inside the article.
 
 ## Contribute
-* Source Code: https://github.com/zabula81/slider.git
-* Issue Tracker: https://github.com/zabula81/slider/issues
-* View: https://zabula81.github.io/slider/
+* Source Code: https://github.com/frontendagnes/slider.git
+* Issue Tracker: https://github.com/frontendagnes/slider/issues
+* View: https://frontendagnes.github.io/slider/
 
 ## Author
 Agnieszka Kamińska (agnieszka.kaminska@ksiegarnia.edu.pl)
